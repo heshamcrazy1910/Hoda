@@ -8,6 +8,7 @@ body {
 }
 a {
   text-decoration: none;
+  color: white;
 }
 ul {
   list-style: none;
@@ -167,7 +168,7 @@ footer.container{
   flex-wrap: wrap;
   flex-direction: column-reverse;
 }
-.footer-col ul{
+.footer-coll ul{
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -217,13 +218,21 @@ footer.container{
 	background-color: #ffffff;
 }
 
-.footer-col ul i {
+.footer-coll ul i {
   margin-right: 10px;
   color: #fff;
 }
-.footer-col ul a {
+.footer-coll ul .ph {
+  color: #fff;
+}
+.footer-coll ul .ph:hover {
+  opacity: 0.8;
+  color: #fdfdfd;
+}
+.footer-coll ul a {
   color: #4080EF;
 }
+
 
 @media(max-width: 767px){
   .footer-col{
@@ -236,3 +245,90 @@ footer.container{
     width: 100%;
 }
 }
+
+#About {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .column {
+    width: 100%;
+    padding: 0 1em 1em 1em;
+    text-align: center;
+  }
+  .card {
+    width: 100%;
+    height: 100%;
+    padding: 2em 1.5em;
+    background: linear-gradient(#ffffff 50%, #2c7bfe 50%);
+    background-size: 100% 200%;
+    background-position: 0 2.5%;
+    border-radius: 5px;
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  h2{
+    color: #2c7bfe;
+  }
+  h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1f194c;
+    margin: 1em 0;
+  }
+  p {
+    color: #575a7b;
+    font-size: 15px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+  }
+  .icon-wrapper {
+    background-color: #2c7bfe;
+    position: relative;
+    margin: auto;
+    font-size: 30px;
+    height: 2.5em;
+    width: 2.5em;
+    color: #ffffff;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    transition: 0.5s;
+  }
+  .card:hover {
+    background-position: 0 100%;
+  }
+  .card:hover .icon-wrapper {
+    background-color: #ffffff;
+    color: #2c7bfe;
+  }
+  .card:hover h3 {
+    color: #ffffff;
+  }
+  .card:hover p {
+    color: #f0f0f0;
+  }
+  @media screen and (min-width: 768px) {
+    #About {
+      padding: 0 2em;
+    }
+    .column {
+      flex: 0 50%;
+      max-width: 50%;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    #About {
+      padding: 1em 3em;
+    }
+    .column {
+      flex: 0 0 33.33%;
+      max-width: 33.33%;
+    }
+  }
