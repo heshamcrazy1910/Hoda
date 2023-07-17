@@ -176,7 +176,7 @@ ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 111px;
+  margin-top: 65px;
 }
 .column {
   width: 100%;
@@ -250,9 +250,9 @@ p {
   #About {
     padding: 1em 3em;
   }
-  .column {
+   .column {
     flex: 0 0 33.33%;
-    max-width: 33.33%;
+    max-width: 33.33%; 
   }
 }
 
