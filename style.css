@@ -275,6 +275,7 @@ footer.container{
 .footer{
 	  background-color: #24262b;
     padding: 10px 0;
+	
 }
 .footer-col{
   display: flex;
@@ -339,9 +340,17 @@ h4{
     width: 50%;
     margin-bottom: 30px;
 }
+	.footer{
+		
+		margin-top:15px
+	}
 }
 @media(max-width: 574px){
   .footer-col{
     width: 100%;
 }
+	.footer{
+		
+		margin-top:15px
+	}
 }
